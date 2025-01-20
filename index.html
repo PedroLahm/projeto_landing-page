@@ -1,11 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/index.css">
+
+    <title>InDecor</title>
 </head>
 <body>
-    
+    <main>
+        <article id="formulario">
+            <section>
+                <h1>InDecor</h1>
+
+                <p>um evento para revoluncionar a sua criatividade</p>
+                <p>Data do evento:</p>
+                <p>Domingo, 28 de Maio, a partir das 14h</p>
+            </section>
+
+            <section>
+                <form action="#" method="post">
+                    <div>
+                        <label for="inome">Nome:</label>
+                        <input type="text" name="nome" id="inome" placeholder="Seu nome completo" required>
+                    </div>
+
+                    <div>
+                        <label for="iemail">E-mail:</label>
+                        <input type="email" name="email" id="iemail" placeholder="Seu melhor e-mail" required>
+                    </div>
+
+                    <div>
+                        <label for="itelefone">Telefone:</label>
+                        <input type="text" name="telefone" id="itelefone" placeholder="Número de WhatsApp | Ex.: (99) 9 9999-9999" required>
+                    </div>
+
+                    <div>
+                        <label for="iprincipal-interesse">Principal Interesse</label>
+                        <select name="principal-interesse" id="iprincipal-interesse" aria-placeholder="Selecione" required>
+                            <option value="" selected disabled hidden>Escolha uma opção</option>
+                            <option value="aptos">Apartamentos</option>
+                            <option value="casas">Casas</option>
+                            <option value="jardins">Jardins</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <button>quero me inscrever</button>
+                    </div>
+                </form>
+            </section>
+        </article>
+
+        <article>
+            <h2>O que você vai aprender:</h2>
+
+            <section>
+                <div>
+                    [IMAGEM]
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus cumque iusto veniam? Quae, voluptatum assumenda!</p>
+                </div>
+                <div>
+                    [IMAGEM]
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus cumque iusto veniam? Quae, voluptatum assumenda!</p>
+                </div>
+                <div>
+                    [IMAGEM]
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus cumque iusto veniam? Quae, voluptatum assumenda!</p>
+                </div>
+            </section>
+        </article>
+
+        <article>
+            <section>
+                <div>[ICONE]</div>
+                <p>Rua Alameda dos Sonhos, 1902</p>
+                <p>Bairro Amoras Silvestres</p>
+                <p>Abertura: 14</p>
+            </section>
+
+            <section>
+                <h2>Local de Destaque</h2>
+
+                <p>O evento será realizado em um local prestigiado pelos amantes de Design de Interiores, onde teremos exemplos de vários ambientes, tanto internos, quanto externos.</p>
+            </section>
+        </article>
+
+        <article>
+            <section>
+                <div>[IMAGEM]</div>
+
+                <h3>Detalhes</h3>
+                <ul>
+                    <li>Posicionamento</li>
+                    <li>Aproveitamento de espaço</li>
+                    <li>Combinação de cores</li>
+                    <li>Organização</li>
+                    <li>E muito mais...</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2>Conheça os ambientes que você vai aprender a decorar.</h2>
+
+                <div>[ IMAGEM ]</div>
+            </section>
+        </article>
+
+        <article>
+            <h2>Gostou? Então se inscreva:</h2>
+            <button>solicitar inscrição</button>
+        </article>
+
+        <footer>
+            <h2>InDecor</h2>
+            <p>A evolução da decoração de interiores</p>
+            <p>Entre em contato: oi@indecor.com.br</p>
+            <p>Ou pelo telefone: (55) 99999-9999</p>
+        </footer>
+    </main>
 </body>
 </html>
