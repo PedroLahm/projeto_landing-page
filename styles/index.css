@@ -6,9 +6,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -22,12 +19,19 @@ article#apresentacao {
 
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
     gap: 10px;
 
     width: 100%;
+    min-height: 100vh; /* Garante altura suficiente */
     padding-bottom: 25px;
+}
+
+article#apresentacao > *{
+    margin: 0; /* Remove margens dos filhos */
+    padding: 0; /* Remove paddings dos filhos */
+    width: auto; /* Evita que os filhos ocupem 100% da largura */
 }
 
 article#apresentacao section:nth-of-type(1){
@@ -134,6 +138,7 @@ article#conteudo h2{
     background-color: #969899;
 
     padding: 30px 0;
+    margin-bottom: 30px;
 
     letter-spacing: 1px;
 
@@ -141,15 +146,26 @@ article#conteudo h2{
     font-weight: 400;
 }
 
+article#conteudo div{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 article#conteudo div.imagem{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
     border-radius: 150px;
-    
+
     width: 250px;
     height: 250px;
+    margin-bottom: 0;
 }
 
 article#conteudo div#imagem1{
@@ -162,4 +178,23 @@ article#conteudo div#imagem2{
 
 article#conteudo div#imagem3{
     background-image: url("../images/sqr-3.jpg");
+}
+
+article#conteudo div p{
+    font-size: 1.2em;
+    color: #7b7c7c;
+}
+
+
+
+/*LOCAL DE DESTAQUE*/
+article#local-destaque{
+    background-image: url("../images/hrz-1.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+article#local-destaque section h2{
+    text-transform: uppercase;
+    color: #EA1BCF;
 }
