@@ -1,32 +1,165 @@
 @charset "UTF-8";
 
+
+/*CONFIG GERAIS*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-#formulario{
-    position: relative;
-    background: url('../images/hrz-5.jpg') no-repeat center center/cover;
-    color: white;
-    padding: 20px;
-    height: 300px;
-    overflow: hidden;
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#formulario::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+
+
+
+/*APRESENTACAO*/
+article#apresentacao {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.673)), 
+    url('../images/hrz-5.jpg') no-repeat center center/cover;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
+    padding-bottom: 25px;
 }
 
-#formulario section{
-    position: relative; 
-    z-index: 2;
+article#apresentacao section:nth-of-type(1){
+    width: 85%;
+}
+
+article#apresentacao div h1{
+    color: #EA1BCF;
+    font-size: 3em;
+    
+    margin-bottom: 8px;
+}
+
+article#apresentacao div h2{
+    text-transform: uppercase;
+    color: white;
+    font-size: 2em;
+
+    margin-bottom: 8px;
+}
+
+article#apresentacao div p{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+article#apresentacao div p:nth-of-type(1){
+    color: white;
+}
+
+article#apresentacao p:nth-of-type(2){
+    color: #ff1be1;
+    margin-bottom: 8px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.389);
+}
+
+article#apresentacao form{
+    background-color: #969899e8;
+
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #0000004b;
+    
+    padding: 15px;
+    margin-top: 20px;
+}
+
+article#apresentacao form p{
+    font-size: 1.6em;
+    letter-spacing: 1px;
+    color: #424446;
+    
+    margin-bottom: 10px;
+}
+
+article#apresentacao form label{
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #424446c3;
+}
+
+article#apresentacao form input, article#apresentacao form select{
+    border: 1px solid #969899;
+    border-radius: 5px;
+    
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+article#apresentacao form input::placeholder, article#apresentacao form select{
+    font-size: 16px;
+    color: #8a8b8c;
+}
+
+article#apresentacao form button{
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 8px;
+
+    background-color: #DA34C3;
+    border: 1px solid #DA34C3;
+    border-radius: 5px;
+
+    text-transform: uppercase;
+    color: white;
+    
+    
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+article#apresentacao form button:hover{
+    background-color: #cd30b8;
+    border-color: #cd30b8;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+
+
+
+/*CONTEUDO*/
+article#conteudo h2{
+    background-color: #969899;
+
+    padding: 30px 0;
+
+    letter-spacing: 1px;
+
+    text-align: center;
+    font-weight: 400;
+}
+
+article#conteudo div.imagem{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 150px;
+    
+    width: 250px;
+    height: 250px;
+}
+
+article#conteudo div#imagem1{
+    background-image: url("../images/sqr-1.jpg");
+}
+
+article#conteudo div#imagem2{
+    background-image: url("../images/sqr-2.jpg");
+}
+
+article#conteudo div#imagem3{
+    background-image: url("../images/sqr-3.jpg");
 }
