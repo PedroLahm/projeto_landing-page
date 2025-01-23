@@ -16,6 +16,7 @@
 article#apresentacao {
     background: linear-gradient(rgba(0, 0, 0, 0.686), rgba(0, 0, 0, 0.851)), 
     url('../images/hrz-5.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
 
     display: flex;
     flex-flow: row wrap;
@@ -71,7 +72,7 @@ article#apresentacao form{
     background-color: #969899e8;
 
     border-radius: 5px;
-    box-shadow: 1px 1px 1px #0000004b;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.426);
     
     padding: 15px;
     margin-top: 20px;
@@ -134,16 +135,19 @@ article#apresentacao form button:hover{
 
 /*CONTEUDO*/
 article#conteudo h2{
-    background-color: #969899;
+    background-color: #a7a8a8;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.426);
 
     padding: 30px 20px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 
     letter-spacing: 1px;
 
     text-align: center;
     font-weight: 400;
     font-size: 1.9em;
+    
+    color: #353638;
 }
 
 article#conteudo div{
@@ -154,7 +158,7 @@ article#conteudo div{
     gap: 15px;
 
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 article#conteudo div.imagem{
@@ -165,6 +169,8 @@ article#conteudo div.imagem{
     width: 250px;
     height: 250px;
     margin-bottom: 0;
+
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 article#conteudo div#imagem1{
@@ -181,7 +187,7 @@ article#conteudo div#imagem3{
 
 article#conteudo div p{
     font-size: 1.2em;
-    color: #7b7c7c;
+    color: #424446;
 }
 
 
@@ -193,6 +199,8 @@ article#local-destaque{
     background-position: top center;
 
     padding: 20px;
+    margin-top: 50px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.426);
 
     text-align: center;
     color: white;
@@ -226,18 +234,26 @@ article#local-destaque section p:nth-of-type(3){
 /*AMBIENTE DE DECORAÇÃO*/
 article#ambientes-decoracao h2{
     font-size: 2em;
-    margin-top: 30px;
+    margin-top: 40px;
+    padding: 0 35px;
+}
+
+article#ambientes-decoracao h3{
+    font-size: 1.9em;
+    font-weight: normal;
+
+    margin-top: 20px;
+    width: 200px;
     padding: 0 35px;
 }
 
 article#ambientes-decoracao section{
     padding: 0 30px;
-}
-
-article#ambientes-decoracao section h3{
-    font-size: 1.9em;
-    font-weight: normal;
-    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
+    align-items: center;
+    gap: 20px;
 }
 
 article#ambientes-decoracao section ul {
@@ -258,11 +274,11 @@ article#ambientes-decoracao section div.imagem-decoracao{
     background-size: cover;
     background-position: center center;
 
-    width: 350px;
+    width: 500px;
     height: 220px;
     margin-top: 20px;
 
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.195);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.426);
 }
 
 article#ambientes-decoracao section div#imagem-detalhes{
@@ -283,8 +299,11 @@ article#inscricao{
     background-position: center center;
     
     text-align: center;
-    padding: 35px;
-    margin-top: 35px;
+
+    padding: 50px 40px;
+    margin-top: 50px;
+
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.426);
 }
 
 article#inscricao h2{
@@ -292,7 +311,7 @@ article#inscricao h2{
     font-weight: normal;
     font-size: 2em;
 
-    margin-top: 40px;
+    margin-top: 80px;
 }
 
 article#inscricao button{
@@ -305,7 +324,7 @@ article#inscricao button{
     color: white;
 
     width: 90%;
-    margin: 25px 0 40px;
+    margin: 25px 0 80px;
     padding: 8px;
 }
 
@@ -314,4 +333,29 @@ article#inscricao button:hover{
     border-color: #cd30b8;
     transition: 0.2s;
     cursor: pointer;
+}
+
+
+
+
+/*FOOTER*/
+footer{
+    text-align: center;
+    color: #424446;
+
+    padding: 50px 0;
+}
+
+footer h2{
+    margin-bottom: 12px;
+    font-size: 2em;
+}
+
+footer p{
+    margin-bottom: 3px;
+}
+
+footer p:nth-of-type(1){
+    margin-bottom: 12px;
+    font-size: 1.3em;
 }
