@@ -1,140 +1,176 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/mediaquery.css">
+    <link rel="stylesheet" href="styles/style.css" />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
 
     <title>InDecor</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <main>
-        <article id="apresentacao">
-            <section>
-                <div>
-                    <h1>InDecor</h1>
-                    <h2>um evento para revoluncionar a sua criatividade</h2>
-                    <p>Data do evento:</p>
-                    <p>Domingo, 28 de Maio, a partir das 14h</p>
-                </div>
-            </section>
-            
-            <section>
-                <form action="#" method="post">
-                    <p>Preencha o formulário para receber os detalhes do evento</p>
+      <article id="apresentacao">
+        <section>
+          <h1>InDecor</h1>
+          <h2>um evento para revoluncionar a sua criatividade</h2>
+          <p>Data do evento:</p>
+          <p>Domingo, 28 de Maio, a partir das 14h</p>
+        </section>
 
-                    <div>
-                        <label for="inome">Nome</label>
-                        <input type="text" name="nome" id="inome" placeholder="Seu nome completo" required>
-                    </div>
+        <section>
+          <form action="#" method="post">
+            <p>Preencha o formulário para receber os detalhes do evento</p>
 
-                    <div>
-                        <label for="iemail">E-mail</label>
-                        <input type="email" name="email" id="iemail" placeholder="Seu melhor e-mail" required>
-                    </div>
+            <div>
+              <label for="inome">Nome</label>
+              <input
+                type="text"
+                name="nome"
+                id="inome"
+                placeholder="Seu nome completo"
+                required
+              />
+            </div>
 
-                    <div>
-                        <label for="itelefone">Telefone</label>
-                        <input type="text" name="telefone" id="itelefone" placeholder="(99) 99999-9999" required>
-                    </div>
+            <div>
+              <label for="iemail">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                id="iemail"
+                placeholder="Seu melhor e-mail"
+                required
+              />
+            </div>
 
-                    <div>
-                        <label for="iprincipal-interesse">Principal Interesse</label>
-                        <select name="principal-interesse" id="iprincipal-interesse" aria-placeholder="Selecione" required>
-                            <option value="" selected disabled hidden>Escolha uma opção</option>
-                            <option value="aptos">Apartamentos</option>
-                            <option value="casas">Casas</option>
-                            <option value="jardins">Jardins</option>
-                            <option value="outro">Outro</option>
-                        </select>
-                    </div>
+            <div>
+              <label for="itelefone">Telefone</label>
+              <input
+                type="text"
+                name="telefone"
+                id="itelefone"
+                placeholder="(99) 99999-9999"
+                required
+              />
+            </div>
 
-                    <div>
-                        <button>quero me inscrever</button>
-                    </div>
-                </form>
-            </section>
-        </article>
+            <div>
+              <label for="iprincipal-interesse">Principal Interesse</label>
+              <select
+                name="principal-interesse"
+                id="iprincipal-interesse"
+                required
+              >
+                <option value="" selected disabled hidden>
+                  Escolha uma opção
+                </option>
+                <option value="aptos">Apartamentos</option>
+                <option value="casas">Casas</option>
+                <option value="jardins">Jardins</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
 
-        <article id="conteudo">
-            <h2>O que você vai aprender:</h2>
+            <div>
+              <button>quero me inscrever</button>
+            </div>
+          </form>
+        </section>
+      </article>
 
-            <section>
-                <div>
-                    <div class="imagem" id="imagem1"></div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus cumque iusto.</p>
-                </div>
-                
-                <div>
-                    <div class="imagem" id="imagem2"></div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus cumque iusto.</p>
-                </div>
+      <article id="conteudo">
+        <h2>O que você vai aprender:</h2>
 
-                <div>
-                    <div class="imagem" id="imagem3"></div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus cumque iusto.</p>
-                </div>
-            </section>
-        </article>
+        <section>
+          <div>
+            <div class="imagem" id="imagem1"></div>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
+              delectus cumque iusto.
+            </p>
+          </div>
 
-        <article id="local-destaque">
-            <section>
-                <h2>Local de destaque</h2>
-                <i class="material-icons">location_on</i>
-                <p>Rua Alameda dos Sonhos, 1902</p>
-                <p>Bairro Amoras Silvestres</p>
-                <p>Abertura: 14h</p>
-            </section>
-        </article>
+          <div>
+            <div class="imagem" id="imagem2"></div>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
+              delectus cumque iusto.
+            </p>
+          </div>
 
-        <article id="ambientes-decoracao">
-            
-            <h2>Conheça os ambientes que você vai aprender a decorar</h2>
-            
+          <div>
+            <div class="imagem" id="imagem3"></div>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
+              delectus cumque iusto.
+            </p>
+          </div>
+        </section>
+      </article>
+
+      <article id="local-destaque">
+        <section>
+          <h2>Local de destaque</h2>
+          <i class="material-icons">location_on</i>
+          <p>Rua Alameda dos Sonhos, 1902</p>
+          <p>Bairro Amoras Silvestres</p>
+          <p>Abertura: 14h</p>
+        </section>
+      </article>
+
+      <article id="ambientes-decoracao">
+        <h2>Conheça os ambientes que você vai aprender a decorar</h2>
+
+        <section>
+          <div>
             <h3>Detalhes</h3>
-            <section>
-                <ul>
-                    <li>Posicionamento</li>
-                    <li>Aproveitamento de espaço</li>
-                    <li>Combinação de cores</li>
-                    <li>Organização</li>
-                    <li><b>E muito mais...</b></li>
-                </ul>
+            <ul>
+              <li>Posicionamento</li>
+              <li>Aproveitamento de espaço</li>
+              <li>Combinação de cores</li>
+              <li>Organização</li>
+              <li><b>E muito mais...</b></li>
+            </ul>
+          </div>
 
-                <div class="imagem-decoracao" id="imagem-detalhes"></div>
-            </section>
+          <div class="imagem-decoracao" id="imagem-detalhes"></div>
+        </section>
 
+        <section>
+          <div>
             <h3>Objetos</h3>
-            <section>
-                <ul>
-                    <li>Cadeiras</li>
-                    <li>Mesas</li>
-                    <li>Espelhos</li>
-                    <li>Plantas</li>
-                    <li>Cortinas</li>
-                    <li><b>E muito mais...</b></li>
-                </ul>
+            <ul>
+              <li>Cadeiras</li>
+              <li>Mesas</li>
+              <li>Espelhos</li>
+              <li>Plantas</li>
+              <li>Cortinas</li>
+              <li><b>E muito mais...</b></li>
+            </ul>
+          </div>
 
-                <div class="imagem-decoracao" id="imagem-objetos"></div>
-            </section>
-            
-        </article>
+          <div class="imagem-decoracao" id="imagem-objetos"></div>
+        </section>
+      </article>
 
-        <article id="inscricao">
-            <h2>Gostou? Então se inscreva:</h2>
-            <button>solicitar inscrição</button>
-        </article>
+      <article id="inscricao">
+        <h2>Gostou? Então se inscreva:</h2>
+        <button>solicitar inscrição</button>
+      </article>
 
-        <footer>
-            <h2>InDecor</h2>
-            <p>A evolução da decoração de interiores</p>
-            <p><b>Entre em contato:</b> oi@indecor.com.br</p>
-            <p><b>Ou pelo telefone:</b> (55) 99999-9999</p>
-        </footer>
+      <footer>
+        <h2>InDecor</h2>
+        <p>A evolução da decoração de interiores</p>
+        <p><b>Entre em contato:</b> oi@indecor.com.br</p>
+        <p><b>Ou pelo telefone:</b> (55) 99999-9999</p>
+      </footer>
     </main>
-</body>
+  </body>
 </html>

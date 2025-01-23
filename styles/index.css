@@ -240,26 +240,22 @@ article#ambientes-decoracao h2{
     text-align: center;
 }
 
-article#ambientes-decoracao h3{
-    font-size: 1.9em;
-    font-weight: normal;
-
-    margin-top: 20px;
-    width: 200px;
-    padding: 0 35px;
-}
-
 article#ambientes-decoracao section{
     padding: 0 30px;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: stretch;
-    align-items: center;
-    gap: 20px;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+article#ambientes-decoracao h3{
+    font-size: 1.9em;
+    font-weight: normal;
+    width: 200px;
 }
 
 article#ambientes-decoracao section ul {
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 article#ambientes-decoracao section ul li{
