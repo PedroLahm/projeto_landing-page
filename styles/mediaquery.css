@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 700px){
+    body{
+        background-color: greenyellow;
+    }
+
+
+
+
+    /*APRESENTACAO*/
+    article#apresentacao{
+        justify-content: space-between;
+        padding: 65px 40px;
+    }
+
+    article#apresentacao section:nth-of-type(1){
+        width: 50%;
+    }
+
+    article#apresentacao section:nth-of-type(2){
+        width: 45%;
+    }
+
+    article#apresentacao section div h1{
+        margin-bottom: 40px;
+    }
+
+    article#apresentacao section div h2{
+        margin-bottom: 40px;
+        font-size: 1.9em;
+    }
+
+    article#apresentacao section form{
+        margin-top: 0;
+    }
+
+
+
+
+    /*AMBIENTES DE DECORACAO*/
+    article#ambientes-decoracao section{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: stretch;
+        align-items: center;
+    }
+
+    article#ambientes-decoracao section ul{
+        width: 45%;
+    }
+
+    article#ambientes-decoracao section div.imagem-decoracao{
+        width: 50%;
+    }
+}

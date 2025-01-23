@@ -24,7 +24,6 @@ article#apresentacao {
     align-items: center; 
     gap: 10px;
 
-    width: 100%;
     padding-bottom: 25px;
 }
 
@@ -34,7 +33,7 @@ article#apresentacao > *{
     width: auto;
 }
 
-article#apresentacao section:nth-of-type(1){
+article#apresentacao section{
     width: 85%;
 }
 
@@ -150,14 +149,13 @@ article#conteudo h2{
     color: #353638;
 }
 
-article#conteudo div{
+article#conteudo section{
     display: flex;
-    flex-flow: column;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
 
-    text-align: center;
     margin-bottom: 50px;
 }
 
@@ -168,7 +166,7 @@ article#conteudo div.imagem{
 
     width: 250px;
     height: 250px;
-    margin-bottom: 0;
+    margin: auto;
 
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
@@ -187,7 +185,10 @@ article#conteudo div#imagem3{
 
 article#conteudo div p{
     font-size: 1.2em;
+    text-align: center;
     color: #424446;
+    width: 80%;
+    margin: auto;
 }
 
 
@@ -266,7 +267,11 @@ article#ambientes-decoracao section ul li{
     color: #424446;
 }
 
-article#ambientes-decoracao section ul li:nth-of-type(5), article#ambientes-decoracao section ul li:nth-of-type(6){
+article#ambientes-decoracao section:nth-of-type(1) ul li:nth-of-type(5){
+    color: #242424;
+}
+
+article#ambientes-decoracao section:nth-of-type(2) ul li:nth-of-type(6){
     color: #242424;
 }
 
@@ -274,9 +279,10 @@ article#ambientes-decoracao section div.imagem-decoracao{
     background-size: cover;
     background-position: center center;
 
-    width: 500px;
+    width: 100%;
     height: 220px;
     margin-top: 20px;
+    margin: auto;
 
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.426);
 }
