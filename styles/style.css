@@ -41,6 +41,8 @@ body{
 
 #apresentacao h2{
     color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.373);
+
     font-size: 1.7em;
     text-transform: uppercase;
 
@@ -116,3 +118,61 @@ body{
     border-color: #e53bc6;
     transition: 0.3s;
 }
+
+
+
+
+/*CONTEUDO*/
+#conteudo h2{
+    background-color: #969899;
+    color: #1A1A1A;
+    
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+
+    margin-bottom: 35px;
+    padding: 32px 25px;
+}
+
+#conteudo section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+
+    margin: 70px 0 55px;
+}
+
+#conteudo div.imagem{
+    background-size: cover;
+    background-position: center;
+
+    width: 290px;
+    height: 290px;
+    
+    border-radius: 150px;
+    box-shadow: 1px solid rgba(0, 0, 0, 0.352);
+}
+
+#conteudo div#imagem1{
+    background-image: url("../images/sqr-1.jpg");
+}
+
+#conteudo div#imagem2{
+    background-image: url("../images/sqr-2.jpg");
+}
+
+#conteudo div#imagem3{
+    background-image: url("../images/sqr-3.jpg");
+}
+
+#conteudo p{
+    width: 290px;
+    margin: 10px 0 15px;
+
+    font-size: 1.3em;
+    text-align: center;
+}
+
