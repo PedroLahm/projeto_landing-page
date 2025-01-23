@@ -235,8 +235,9 @@ article#local-destaque section p:nth-of-type(3){
 /*AMBIENTE DE DECORAÇÃO*/
 article#ambientes-decoracao h2{
     font-size: 2em;
-    margin-top: 40px;
+    margin: 40px 0;
     padding: 0 35px;
+    text-align: center;
 }
 
 article#ambientes-decoracao h3{
@@ -271,7 +272,7 @@ article#ambientes-decoracao section:nth-of-type(1) ul li:nth-of-type(5){
     color: #242424;
 }
 
-article#ambientes-decoracao section:nth-of-type(2) ul li:nth-of-type(6){
+article#ambientes-decoracao section ul li:nth-of-type(6){
     color: #242424;
 }
 
