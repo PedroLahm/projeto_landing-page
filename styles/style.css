@@ -51,7 +51,7 @@ body{
 
 #apresentacao p{
     color: white;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 #apresentacao p:nth-of-type(2){
@@ -132,7 +132,7 @@ body{
     text-align: center;
 
     margin-bottom: 35px;
-    padding: 32px 25px;
+    padding: 40px 25px;
 }
 
 #conteudo section{
@@ -153,7 +153,7 @@ body{
     height: 290px;
     
     border-radius: 150px;
-    box-shadow: 1px solid rgba(0, 0, 0, 0.352);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.429);
 }
 
 #conteudo div#imagem1{
@@ -176,3 +176,57 @@ body{
     text-align: center;
 }
 
+
+
+
+/*LOCAL DESTAQUE*/
+#local-destaque{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)), url("../images/hrz-1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    padding: 150px;
+}
+
+#local-destaque section{
+    width: 400px;
+}
+
+#local-destaque h2{
+    color: #EA1CC4;
+    font-size: 3.5em;
+    text-transform: uppercase;
+
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.386);
+
+    margin-bottom: 30px;
+    width: 300px;
+}
+
+#local-destaque p{
+    color: white;
+    font-size: 1.2em;
+}
+
+#local-destaque section:nth-child(2){
+    text-align: center;
+}
+
+#local-destaque i{
+    color: #EA1CC4;
+    font-size: 7em;
+
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.386);
+    margin-bottom: 50px;
+}
+
+#local-destaque section:nth-of-type(2) p{
+    font-size: 1.2em;
+}
