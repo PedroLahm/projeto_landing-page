@@ -7,6 +7,7 @@
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #A2A2A2;
 }
 
 
@@ -184,49 +185,196 @@ body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)), url("../images/hrz-1.jpg");
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+
+    padding: 150px 100px;
 
     display: flex;
-    flex-flow: row-reverse wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 50px;
-
-    padding: 150px;
+    gap: 20px;
 }
 
 #local-destaque section{
-    width: 400px;
+    /*background-color: lightblue;*/
+
+    width: 38%;
 }
 
-#local-destaque h2{
-    color: #EA1CC4;
-    font-size: 3.5em;
-    text-transform: uppercase;
-
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.386);
-
-    margin-bottom: 30px;
-    width: 300px;
-}
-
-#local-destaque p{
-    color: white;
-    font-size: 1.2em;
-}
-
-#local-destaque section:nth-child(2){
-    text-align: center;
+#local-destaque section:nth-of-type(1){
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    align-items: center;
+    flex-flow: column nowrap;
 }
 
 #local-destaque i{
     color: #EA1CC4;
     font-size: 7em;
+}
 
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.386);
+#local-destaque section:nth-of-type(1) p{
+    width: 100%;
+    text-align: center;
+}
+
+#local-destaque p{
+    color: white;
+    font-size: 1.3em;
+
+    width: 90%;
+}
+
+#local-destaque section:nth-of-type(2){
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+#local-destaque h2{
+    color: #EA1CC4;
+    font-size: 2.2em;
+    text-transform: uppercase;
+
+    line-height: 45px;
+
+    margin-bottom: 30px;
+    width: 40%;
+}
+
+
+
+/*AMBIENTES DECORACAO*/
+#ambientes-decoracao{
+    /*background-color: lightblue;*/
+    padding: 50px 0;
+    color: #1a1a1a;
+    
+    display: flex;
+    flex-flow: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#ambientes-decoracao section{
+    /*background-color: lightgreen;*/
+    width: 90%;
+    height: 350px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#ambientes-decoracao section:nth-of-type(2){
+    flex-flow: row-reverse nowrap;
+}
+
+#ambientes-decoracao .imagem-decoracao{
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.327);
+    width: 50%;
+    height: 100%;
+
+    background-position: center center;
+    background-size: cover;
+}
+
+#ambientes-decoracao #imagem-principal{
+    background-image: url("../images/hrz-3.jpg");
+}
+
+#ambientes-decoracao #imagem-detalhes{
+    background-image: url("../images/hrz-4.jpg");
+}
+
+#ambientes-decoracao #imagem-objetos{
+    background-image: url("../images/hrz-5.jpg");
+}
+
+#ambientes-decoracao div:nth-of-type(2){
+    width: 40%;
+}
+
+#ambientes-decoracao h2{
+    font-size: 3.2em;
+}
+
+#ambientes-decoracao h3{
+    font-size: 2em;
+}
+
+#ambientes-decoracao ul{
+    font-size: 1.3em;
+}
+
+
+
+
+
+/*INSCRICAO*/
+#inscricao{
+    background-color: lightblue;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)), url("../images/hrz-6.jpg");
+    background-position: center center;
+    background-size: cover;
+    
+    color: white;
+
+    text-align: center;
+    padding: 150px 0;
+}
+
+#inscricao section{
+    /*background-color: lightgreen;*/
+    width: 90%;
+    margin: auto;
+}
+
+#inscricao h2{
+    font-weight: normal;
+    font-size: 3em;
+
     margin-bottom: 50px;
 }
 
-#local-destaque section:nth-of-type(2) p{
+#inscricao button{
+    background-color: #EA1CC4;
+    border: 1px solid #EA1CC4;
+    border-radius: 10px;
+
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: white;
+
+    width: 40%;
+    padding: 10px;
+
+    cursor: pointer;
+}
+
+#inscricao button:hover{
+    background-color: #e53bc6;
+    border: 1px solid #e53bc6;
+
+    transition: .2s;
+}
+
+
+
+
+/*FOOTER*/
+footer{
+    padding: 50px 0;
+    text-align: center;
     font-size: 1.2em;
+}
+
+footer h2{
+    margin-bottom: 15px;
+}
+
+footer p:nth-of-type(1){
+    margin-bottom: 15px;
 }
