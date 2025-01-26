@@ -109,4 +109,16 @@
         background-color: lightblue;
     }
 
+    #local-destaque section:nth-of-type(2){
+        width: fit-content;
+    }
+
+    #local-destaque h2{
+        font-size: 2em !important;
+        line-height: 1px;
+    }
+
+    #local-destaque i{
+        font-size: 4em;
+    }
 }
