@@ -7,374 +7,103 @@
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #8e8e8e;
-
-    max-width: 100vw;
 }
 
-
-
-#apresentacao{
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 20px;
-    
-
-    background-image: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)), url("../images/hrz-5.jpg");
+#container-1{
+    /*background-color: lightblue;*/
+    background: linear-gradient(rgba(0, 0, 0, 0.752), rgba(0, 0, 0, 0.752)), url("../images/hrz-5.jpg");
+    background-position: center center;
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-
-    padding: 50px 30px;
+    padding: clamp(0.8rem, 3.5vw, 4.3rem) clamp(1rem, 9vw, 10rem);
+    
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 30px;
 }
 
-#apresentacao section{
-    width: 400px;
+#container-1 section{
+    /*background-color: lightgreen;*/
+    flex: 1 1 200px;
 }
 
-#apresentacao h1{
-    color: #EA1CC4;
-    font-size: 3.2em;
+#container-1 h1{
+    color: #DA23C8;
+    font-size: clamp(2.5rem, 6vw, 5rem);
 
-    margin-bottom: 30px;
+    margin-bottom: clamp(1.3rem, 3vw, 4rem);
 }
 
-#apresentacao h2{
+#container-1 h2{
     color: white;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.373);
-
-    font-size: 1.7em;
     text-transform: uppercase;
+    font-size: clamp(1.25rem, 3.5vw, 2.5rem);
 
-    margin-bottom: 30px;
+    margin-bottom: clamp(1.3rem, 3vw, 4rem);
 }
 
-#apresentacao p{
+#container-1 p {
     color: white;
-    font-size: 1.2em;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
-#apresentacao p:nth-of-type(2){
-    color: #EA1CC4;
-    font-weight: bold;
-    letter-spacing: 0.8px;
-}
-
-#apresentacao form{
-    background-color: #969899e3;
-    border-radius: 10px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.538);
-    padding: 30px 20px;
-}
-
-#apresentacao form p{
-    color: #1a1a1a;
-    font-size: 1.6em;
-    margin-bottom: 25px;
-}
-
-#apresentacao form div{
-    margin-bottom: 10px;
-}
-
-#apresentacao form label{
-    color: #373737;
+#container-1 p:nth-of-type(2){
+    color: #DA23C8;
     font-weight: bold;
 }
 
-#apresentacao form input, form select{
-    width: 100%;
-    padding: 8px;
-
-    border: 1px solid white;
+#container-1 form{
+    background-color: #969899cd;
     border-radius: 10px;
-
-    color: #6e6f6f;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.549);
+    padding: clamp(0.8rem, 1.5vw, 2.3rem) clamp(1rem, 2.5vw, 4rem);
 }
 
-#apresentacao form select{
-    cursor: pointer;
-}
-
-#apresentacao form button{
-    background-color: #EA1CC4;
-    border: 1px solid #EA1CC4;
-    border-radius: 10px;
-
-    font-size: 1em;
-    text-transform: uppercase;
-    color: white;
-
-    width: 100%;
-    padding: 10px;
-    margin-top: 25px;
-
-    cursor: pointer;
-}
-
-#apresentacao form button:hover{
-    background-color: #e53bc6;
-    border-color: #e53bc6;
-    transition: 0.3s;
-}
-
-
-
-
-/*CONTEUDO*/
-#conteudo h2{
-    background-color: #969899;
-    color: #1A1A1A;
-    
-    font-size: 2em;
-    font-weight: 400;
-    text-align: center;
-
-    margin-bottom: 35px;
-    padding: 40px 25px;
-}
-
-#conteudo section{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 15px;
-
-    margin: 70px 0 55px;
-}
-
-#conteudo div.imagem{
-    background-size: cover;
-    background-position: center;
-
-    width: 290px;
-    height: 290px;
-    
-    border-radius: 150px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.429);
-}
-
-#conteudo div#imagem1{
-    background-image: url("../images/sqr-1.jpg");
-}
-
-#conteudo div#imagem2{
-    background-image: url("../images/sqr-2.jpg");
-}
-
-#conteudo div#imagem3{
-    background-image: url("../images/sqr-3.jpg");
-}
-
-#conteudo p{
-    width: 290px;
-    margin: 10px 0 15px;
-
-    font-size: 1.3em;
-    text-align: center;
-}
-
-
-
-
-/*LOCAL DESTAQUE*/
-#local-destaque{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)), url("../images/hrz-1.jpg");
-    background-position: center;
-    background-size: cover;
-
-    padding: 150px 100px;
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
-}
-
-#local-destaque section{
-    /*background-color: lightblue;*/
-
-    width: 100%;
-}
-
-#local-destaque section:nth-of-type(1){
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column nowrap;
-}
-
-#local-destaque i{
-    color: #EA1CC4;
-    font-size: 7em;
-}
-
-#local-destaque section:nth-of-type(1) p{
-    text-align: center;
-}
-
-#local-destaque p{
-    color: white;
-    font-size: 1.2em;
-
-    width: 90%;
-}
-
-#local-destaque section:nth-of-type(2){
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
-#local-destaque h2{
-    color: #EA1CC4;
-    font-size: 2.3em;
-    text-transform: uppercase;
-
-    line-height: 45px;
-
-    margin-bottom: 30px;
-}
-
-
-
-
-/*AMBIENTES DECORACAO*/
-#ambientes-decoracao{
-    /*background-color: lightblue;*/
-    padding: 50px 0;
-    color: #1a1a1a;
-    
-    display: flex;
-    flex-flow: column;
-    gap: 50px;
-    justify-content: center;
-    align-items: center;
-}
-
-#ambientes-decoracao section{
-    /*background-color: lightgreen;*/
-    width: 90%;
-    height: 350px;
-
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#ambientes-decoracao section:nth-of-type(2){
-    flex-flow: row-reverse nowrap;
-}
-
-#ambientes-decoracao .imagem-decoracao{
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.327);
-    width: 50%;
-    height: 100%;
-
-    background-position: center center;
-    background-size: cover;
-}
-
-#ambientes-decoracao #imagem-principal{
-    background-image: url("../images/hrz-3.jpg");
-}
-
-#ambientes-decoracao #imagem-detalhes{
-    background-image: url("../images/hrz-4.jpg");
-}
-
-#ambientes-decoracao #imagem-objetos{
-    background-image: url("../images/hrz-5.jpg");
-}
-
-#ambientes-decoracao div:nth-of-type(2){
-    width: 40%;
-}
-
-#ambientes-decoracao h2{
-    font-size: 3.2em;
-}
-
-#ambientes-decoracao h3{
-    font-size: 2em;
-}
-
-#ambientes-decoracao ul{
-    font-size: 1.3em;
-}
-
-
-
-
-/*INSCRICAO*/
-#inscricao{
-    background-color: lightblue;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)), url("../images/hrz-6.jpg");
-    background-position: center center;
-    background-size: cover;
-    
-    color: white;
-
-    text-align: center;
-    padding: 150px 0;
-}
-
-#inscricao section{
-    /*background-color: lightgreen;*/
-    width: 90%;
-    margin: auto;
-}
-
-#inscricao h2{
+#container-1 form h3{
+    color: #3b3b3c;
+    font-size: clamp(1.1rem, 2.6vw, 2.2rem);
     font-weight: normal;
-    font-size: 3em;
 
-    margin-bottom: 50px;
-    width: 100%;
+    margin-bottom: 20px;
 }
 
-#inscricao button{
-    background-color: #EA1CC4;
-    border: 1px solid #EA1CC4;
-    border-radius: 10px;
+#container-1 label{
+    color: #4b4b4d;
+    font-weight: bold;
+    font-size: clamp(0.85rem, 2vw, 1.1rem);
+}
 
-    font-size: 1.5em;
-    text-transform: uppercase;
+#container-1 input, #container-1 select{
+    width: 100%;
+    border: 1px solid #969899;
+    border-radius: 5px;
+
+    margin-bottom: 15px;
+    padding: clamp(0.4rem, 0.8vw, 0.6rem) clamp(0.8rem, 1.5vw, 1rem);
+}
+
+#container-1 select{
+    color: #6a6b6c;
+}
+
+#container-1 button{
+    background-color: #DA23C8;
     color: white;
 
-    width: 60%;
-    padding: 10px;
+    font-size: clamp(0.85rem, 2vw, 1.1rem);
+    text-transform: uppercase;
+
+    border: 1px solid #DA23C8;
+    border-radius: 5px;
+
+    padding: clamp(0.4rem, 0.8vw, 0.6rem) clamp(0.8rem, 1.5vw, 1rem);
+    width: 100%;
 
     cursor: pointer;
 }
 
-#inscricao button:hover{
-    background-color: #e53bc6;
-    border: 1px solid #e53bc6;
-
+#container-1 button:hover{
+    background-color: #d445c6;
+    border-color: #d445c6;
     transition: .2s;
-}
-
-
-
-
-/*FOOTER*/
-footer{
-    padding: 50px 0;
-    text-align: center;
-    font-size: 1.2em;
-}
-
-footer h2{
-    margin-bottom: 15px;
-}
-
-footer p:nth-of-type(1){
-    margin-bottom: 15px;
 }
