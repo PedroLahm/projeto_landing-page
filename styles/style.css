@@ -219,7 +219,7 @@ body{
 
 #container-3 p{
     color: white;
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-size: clamp(1rem, 2vw, 1.3rem);
 }
 
 #container-3 section:nth-of-type(2){
@@ -230,4 +230,59 @@ body{
     font-size: clamp(4rem, 6.5vw, 7rem);
     color: #DA23C8;
     margin-bottom: 10px;
+}
+
+
+
+
+/*CONTAINER-4*/
+#container-4{
+    background-color: lightblue;
+    padding: clamp(1.5rem, 3vw, 3.5rem) clamp(1.5rem, 1.5vw, 2rem);
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#container-4 section{
+    background-color: lightgreen;
+    flex: 1 1 200px;
+
+    max-width: 800px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+}
+
+#container-4 .imagem-decoracao{
+    width: clamp(320px, 40vw, 600px);
+    height: clamp(180px, 16vw, 400px);
+}
+
+#container-4 div{
+    background-color: lightcoral;
+}
+
+#container-4 div:nth-of-type(1){
+    min-width: 600px;
+}
+
+#container-4 div:nth-of-type(2){
+    max-width: 400px;
+}
+
+#container-4 h2{
+    font-size: clamp(1.5rem, 3vw, 3.5rem);
+}
+
+#container-4 h3{
+    font-size: clamp(1.2rem, 2vw, 2.5rem);
+}
+
+#container-4 ul{
+    font-size: clamp(1rem, 2vw, 1.3rem);
 }
