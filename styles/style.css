@@ -9,6 +9,10 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+
+
+/*CONTAINER-1*/
 #container-1{
     /*background-color: lightblue;*/
     background: linear-gradient(rgba(0, 0, 0, 0.752), rgba(0, 0, 0, 0.752)), url("../images/hrz-5.jpg");
@@ -106,4 +110,73 @@ body{
     background-color: #d445c6;
     border-color: #d445c6;
     transition: .2s;
+}
+
+
+
+
+/*CONTAINER-2*/
+#container-2{
+    /*background-color: lightblue;*/
+    text-align: center;
+
+    color: #3b3b3c;
+}
+
+#container-2 h2{
+    background-color: #969899;
+    
+    font-size: clamp(1.25rem, 3.5vw, 2.5rem);
+    font-weight: normal;
+
+    padding: clamp(1rem, 2.5vw, 3rem) clamp(1.5rem, 3vw, 4rem);
+}
+
+#container-2 section{
+    padding: clamp(1.5rem, 3vw, 3.5rem) clamp(1rem, 1.5vw, 2rem);
+
+    /*background-color: lightgreen;*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#container-2 div{
+    /*background-color: lightpink;*/
+    flex: 1 1 300px;
+}
+
+#container-2 div p{
+    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+
+#container-2 .imagem{
+    background-size: cover;
+    background-position: center center;
+
+    width: clamp(180px, 16vw, 400px);
+    height: clamp(180px, 16vw, 400px);
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    margin: auto;
+}
+
+#container-2 #imagem1{
+    background-image: url("../images/sqr-1.jpg");
+}
+
+#container-2 #imagem2{
+    background-image: url("../images/sqr-2.jpg");
+}
+
+#container-2 #imagem3{
+    background-image: url("../images/sqr-3.jpg");
 }
